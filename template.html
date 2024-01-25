@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Your Webshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Add your additional styles here */
+
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .close-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Swift.</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Your main content for the product page goes here -->
+    <div class="existing-container">
+      <div class="product-card">
+        <h2>Aged reddit accounts</h2>
+        <p>
+          Reddit Accounts | Registered in 08.2023. The email accounts are not
+          verified. Accounts are registered in IP addresses of different
+          countries.
+        </p>
+        <p>Pcs available: 1850</p>
+        <p>Price: $0.03</p>
+        <a
+          href="index.html"
+          class="blockoPayBtn"
+          data-toggle="modal"
+          data-uid="984145fef5064b6d"
+          ><img
+            width="160"
+            src="https://www.blockonomics.co/img/pay_with_bitcoin_medium.png"
+        /></a>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <h2>Out of stock</h2>
+        <p>Details about Product 2.</p>
+        <p>Pcs available: 50</p>
+        <p>Price: $0.05</p>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <h2>Out of stock</h2>
+        <p>Details about Product 3.</p>
+        <p>Pcs available: 100</p>
+        <p>Price: $0.03</p>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="product-card">
+        <h2>Out of stock</h2>
+        <p>Details about Product 4.</p>
+        <p>Pcs available: 50</p>
+        <p>Price: $0.05</p>
+      </div>
+    </div>
+
+    <script src="https://www.blockonomics.co/js/pay_button.js"></script>
+  </body>
+</html>

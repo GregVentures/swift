@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Page</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+
+      .crypto-info {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+
+      .crypto-address {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .amount-owed {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .qr-code {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Payment Details</h1>
+
+    <div class="crypto-info">
+      <div class="crypto-address">
+        Crypto Address: <span id="crypto-address">Your Crypto Address</span>
+      </div>
+      <div class="amount-owed">
+        Amount Owed: <span id="amount-owed">0.01 BTC</span>
+      </div>
+    </div>
+
+    <div class="qr-code">
+      <!-- Use a QR code image generator with your crypto address -->
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?data=YourCryptoAddressHere&size=200x200"
+        alt="QR Code"
+      />
+    </div>
+
+    <p>
+      Please send the specified amount to the provided crypto address. Once the
+      payment is confirmed, your order will be processed.
+    </p>
+  </body>
+</html>

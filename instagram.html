@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Instagram Accounts - Your Webshop</title>
+  </head>
+  <body>
+    <!-- Fetch and inject the template content using JavaScript -->
+    <div id="template-container"></div>
+    <script>
+      // Fetch the template content
+      fetch("template.html")
+        .then((response) => response.text())
+        .then((template) => {
+          // Inject the template content into the container
+          document.getElementById("template-container").innerHTML = template;
+
+          // Customize the product card for Instagram accounts
+          const productCard = document.createElement("div");
+          productCard.classList.add("product-card");
+          productCard.innerHTML = `
+          <h2>Instagram Account</h2>
+          <p>Details about the Instagram account.</p>
+          <p>Pcs available: 100</p>
+          <p>Price: $0.03</p>
+          <a href="#" class="buy-button">Buy Now</a>
+        `;
+
+          // Insert the customized product card into the container
+          document.querySelector(".container").appendChild(productCard);
+        });
+    </script>
+  </body>
+</html>
